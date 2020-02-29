@@ -23,7 +23,6 @@ html{
 .navigation-panel{
   display:flex;
   align-items: center;
-  justify-content: center;
   padding: 20px 0px;
 }
 .navigation-panel-inner{
@@ -32,10 +31,22 @@ html{
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
-  letter-spacing: .2em;
+  letter-spacing: .25em;
   text-transform: uppercase;
 }
-.header-item{
-  display: inline-block;
-  vertical-align: middle;
+.index-image{
+  object-fit: contain;
+  max-width: 1280px;
+}
+.text-align-center{
+  text-align: center;
+}
+h1{
+  margin: .67em 0;
+  color: #4b495f;
+  font-family: bebas-neue;
+  font-size: 70px;
+  letter-spacing: -.04em;
+  line-height: .3em;
+  text-transform: uppercase;
 }
