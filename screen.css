@@ -11,28 +11,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 html{
   font-family: sans-serif;
-  font-size: 1.125em;
-  line-height: 1.2222222222em;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.2222222222em; /* 22 / 18 = 1.2222222222  */
 }
 .header-primary{
   display:flex;
   align-items: center;
   justify-content: center;
-  padding: 1px 0;
+  height: 4em;
 }
 .navigation-panel{
-  display:flex;
-  align-items: center;
-  padding: 20px 0px;
-}
-.navigation-panel-inner{
   padding: 0px 20px;
+}
+.header-item{
+  padding: 0 0.5em;
   font-family: futura-pt;
-  font-weight: 400;
-  font-style: normal;
   font-size: 13px;
   letter-spacing: .25em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .index-image{
   object-fit: contain;
