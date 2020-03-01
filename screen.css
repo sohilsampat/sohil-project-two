@@ -48,10 +48,6 @@ html{
   text-transform: uppercase;
   text-align: center;
 }
-.container > div{
-  border-radius: 5px;
-  /* padding: 10px; */
-}
 .container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -62,4 +58,119 @@ html{
 }
 .small-image{
   max-width: 100%;
+}
+figure{
+  padding: 0.5em 0;
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: .03em;
+  line-height: 1.2em;
+  text-transform: none;
+  color: #4b495f;
+}
+figcaption{
+  padding: 2em 0;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .22em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.learn-more-buttons{
+  padding: 1em 0;
+  color: #4b495f;
+  text-decoration: none;
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  text-align: center;
+  background-color: #4b495f;
+}
+.footer-nav-item{
+  color: #fff;
+  text-decoration: none;
+}
+.footer-middle-bottom{
+  color: rgba(255,255,255,.72);
+  padding-top: 3em;
+}
+
+/* Media Queries */
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* 320px || 320 / 16 = 20em */
+@media screen and (min-width: 20em) {
+  .navigation-panel{
+    display: none;
+  }
+  .mobile-navigation-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .centered-text{
+    font-size: 2em;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    padding: 1em;
+  }
+  .footer-nav-group{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 1em;
+  }
+}
+
+/* 480px || 480 / 16 = 30em */
+@media screen and (min-width: 30em) {
+  .navigation-panel{
+    display: none;
+  }
+  .mobile-navigation-panel{
+    display: grid;
+    grid-template-columns: repeat(7, auto );
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    text-align: center;
+  }
+  .container{
+    padding: 0 2em;
+  }
+}
+
+/* 760px || 760 / 16 = 47.5em */
+@media screen and (min-width: 47.5em) {
+  .navigation-panel{
+    display: none;
+  }
+  .mobile-navigation-panel{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-rows: auto; */
+    grid-auto-columns: 1fr;
+    /* text-align: center; */
+  }
+  .centered-text{
+    font-size: 3em;
+  }
+  .container{
+    padding: 0 7em;
+  }
+}
+
+/* 1075px || 1075 / 16 = 667.1875em */
+@media screen and (min-width: 67.1875em) {
+  .navigation-panel{
+    display: flex;
+  }
+  .mobile-navigation-panel{
+    display: none;
+  }
 }
