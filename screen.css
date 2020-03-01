@@ -36,17 +36,33 @@ html{
 }
 .index-image{
   object-fit: contain;
-  max-width: 1280px;
+  max-width: 100%;
 }
 .text-align-center{
   text-align: center;
 }
-h1{
+.centered-text{
   margin: .67em 0;
   color: #4b495f;
   font-family: bebas-neue;
-  font-size: 70px;
+  font-size: 3em;
   letter-spacing: -.04em;
   line-height: .3em;
   text-transform: uppercase;
+  text-align: center;
+}
+.container > div{
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.3fr;
+  gap: 1em 2em;
+  padding: 0 7em;
+  justify-content: center;
+}
+.small-image{
+  max-width: 100%;
 }
