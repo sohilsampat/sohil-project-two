@@ -18,10 +18,13 @@ html{
   display:flex;
   align-items: center;
   justify-content: center;
-  height: 4em;
+  /* height: 4em; */
 }
 .navigation-panel{
   padding: 0px 20px;
+}
+.header-logo{
+  max-width: 100%;
 }
 .header-item{
   padding: 0 0.5em;
@@ -32,11 +35,7 @@ html{
   text-decoration: none;
 }
 .index-image{
-  object-fit: contain;
   max-width: 100%;
-}
-.text-align-center{
-  text-align: center;
 }
 .centered-text{
   margin: .67em 0;
@@ -53,7 +52,6 @@ html{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 0.3fr;
   gap: 1em 2em;
-  padding: 0 7em;
   justify-content: center;
 }
 .small-image{
