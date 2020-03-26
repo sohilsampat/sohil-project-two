@@ -25,27 +25,20 @@ html{
   font-size: 0.8125em; /* 13 / 16 = 0.8125 */
   letter-spacing: .25em; /* 4 / 16 = 0.25 */
   text-transform: uppercase;
-}
-li{
   text-align: center;
 }
 a{
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
 .index-image{
   max-width: 100%;
 }
-.centered-text{
+
+
+
+
+
+.centered-titles{
   margin: .67em 0; /* 10.72 / 16 = 0.67 */
   color: #4b495f;
   font-family: bebas-neue;
@@ -56,30 +49,26 @@ a{
   text-align: center;
 }
 .container{
+  padding: 0em 2em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 1em 2em; /* 1em = 16px and 32 / 16 = 2 */
-  justify-content: center;
+  grid-gap: 3em; /* 66/22 = 3em */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: 1fr; */
+  /* justify-content: center; */
+}
+figure{
+  padding-bottom: 1em;
 }
 .small-image{
   max-width: 100%;
 }
-figure{
-  padding-bottom: 0.5em; /* 8 / 16 = 0.5 */
-  font-family: futura-pt;
-  font-weight: 400;
+h2{
+  padding: 1em 0; /* 32 / 16 = 2 */
   font-style: normal;
-  font-size: 1.25em; /* 20 / 16 = 1.25 */
-  letter-spacing: .03em; /* 0.48 / 16 = 0.03 */
-  line-height: 1.2em; /* 19.2 / 16 = 1.2 */
-  text-transform: none;
-  color: #4b495f;
-}
-figcaption{
-  padding: 2em 0; /* 32 / 16 = 2 */
+  font-family: futura-pt;
   font-weight: bold;
   font-size: 0.875em; /* 14 / 16 = 0.875 */
+  color: #4b495f;
   letter-spacing: .22em; /* 3.52 / 16 = 0.22 */
   line-height: 1.5em; /* 24 / 16 = 1.5 */
   text-transform: uppercase;
@@ -87,7 +76,6 @@ figcaption{
 .learn-more-buttons{
   padding: 1em 0; /* 1em = 16px */
   color: #4b495f;
-  text-decoration: none;
   padding: 0.7em; /* 11.2 / 16 = 0.7 */
   border-style: solid;
   border-width: thin;
