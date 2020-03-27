@@ -46,7 +46,7 @@ a{
 .container{
   padding: 0em 2em;
   display: grid;
-  grid-gap: 3em; /* 66/22 = 3em */
+  grid-gap: 2em; /* 66/22 = 3em */
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-rows: 1fr; */
   /* justify-content: center; */
@@ -56,6 +56,9 @@ figure{
 }
 .small-image{
   max-width: 100%;
+}
+figcaption{
+  padding-bottom: 1em;
 }
 h2{
   padding: 1em 0; /* 32 / 16 = 2 */
