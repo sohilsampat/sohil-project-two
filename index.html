@@ -9,16 +9,23 @@
 
 <body>
   <header id="header">
-    <img class="header-logo" src="home/header_logo.png" alt="Sohil Sampat Logo">
-      <ul class="navigation-panel">
-        <li><a href="photography/">Photography</a></li>
-        <li><a href="videography/">Videography</a></li>
-        <li><a href="classes/">Classes</a></li>
-        <li><a href="about/">About</a></li>
-        <li><a href="shop/">Shop</a></li>
-        <li><a href="press/">Press</a></li>
-        <li><a href="contact/">Contact</a></li>
-      </ul>
+    <div class="topnav">
+      <a href="#home" class="active">
+        <img class="header-logo" src="home/header_logo2.png" alt="Sohil Sampat Logo">
+      </a>
+      <div id="navigation-panel">
+        <a href="photography/">Photography</a>
+        <a href="videography/">Videography</a>
+        <a href="classes/">Classes</a>
+        <a href="about/">About</a>
+        <a href="shop/">Shop</a>
+        <a href="press/">Press</a>
+        <a href="contact/">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 <!-- Media Query -->
         <ul class="mobile-navigation-panel">
           <li><a href="photography/">Photography</a></li>
@@ -99,5 +106,16 @@
         Copyright 2020, Sohil Sampat Licensed Pilot. All Rights Reserved.
       </p>
   </footer>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("navigation-panel");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 </body>
 </html>
