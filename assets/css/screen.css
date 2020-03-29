@@ -187,6 +187,9 @@ h2{
     text-transform: uppercase;
     text-align: center;
   }
+  .topnav{
+    display:none;
+  }
   .footer-nav-items >a{
     margin: 0 8em;
   }
